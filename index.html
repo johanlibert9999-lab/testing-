@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+<link rel="stylesheet" href="style.css"><head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A new web page">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="assets/Arthur.jpg">
+    <title>iwak</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>for alinn</h1>
-  <p1>Lin lu itu sebenarnya my darling, my love, my sweetness, my world, my baby, my solace, my rainbow, my daily spirit, my night moon, my stars in the sky, my fire of enthusiasm, the flowers in my garden, my cooling water, my soul's life, the owner of my longing, the cure for my wounds, the soother of my heart, the light of my path, my soul mate, the guardian of my heart, the reason for my smile, the owner of my beating heart, the tune in my song, my beautiful dream, my night guard, the soother of my soul, the lamp in my darkness, the crashing of my waves, my morning sun, my gentle breeze, the refreshing rain, the calming dusk, the dew on the leaves, the sun of life, the poetry in my heart, the eternal story, the harmony of my soul, the endless longing, my complement, my final destination, my life's inspiration, the melody of my tune, my warmest hug, the smile I long for, my little heaven, the guardian of my dreams, the light of my stars, my breath, the sigh of mylonging, the beat of my heart, my most beautiful night, the hope in my life, the dawn of my salvation, my bright afternoon, my calm waves, my shield of my heart, my love ark, my night blanket, my morning embrace, my universe harmony, my heart's idol, the flower sower on my path, the morning lantern, the morning star in my darkness, the oxygen in my breath, my ocean of love, my living soul, the aurora of my love, the inspiration of my longing, the solace of my fatigue, my limitless happiness, and the eternal time in my life</p1>
+        <div class="card" style="font-size:130px">
+
+          <h1 style="color:#6003ab;text-align:center;font-size:4.0vw;">｡.:arthur:.｡</h1>
+
+
+          <img src="assets/Arthur.jpg">
+          </img>
+
+
+        <div class="center"> <button
+        id="myButton2"
+    onclick="window.location.href='pages/contact.html'"
+    aria-label="Go to contact page">contact me</button></div>
+
+        <div class="center2">
+  <button
+    id="myButton"
+    onclick="window.location.href='pages/social.html'"
+    aria-label="Go to social media page"
+  >
+    Social Media
+  </button>
+</div>
+
+
+
+          </div>
+
+
+
+
+        <script>
+
+          function handleOrientationChange() {
+  if (window.innerWidth > window.innerHeight) {
+    window.location.href = "pages/landscape.html";
+  }
+}
+
+handleOrientationChange();
+
+window.addEventListener("resize", handleOrientationChange);
+window.addEventListener("orientationchange", handleOrientationChange);
+
+    document.getElementById("MyButton").addEventListener("click", function() {
+  this.classList.add("clicked");
+  setTimeout(() => {
+    window.location.href = 'pages/social.html';
+  }, 150);
+});
+
+document.getElementById("MyButton2").addEventListener("click", function() {
+  this.classList.add("clicked2");
+  setTimeout(() => {
+    window.location.href = 'pages/social.html';
+  }, 150);
+});
+
+
+
+        </script>
+
 </body>
 </html>
