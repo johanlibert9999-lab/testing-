@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+<link rel="stylesheet" href="style.css"><head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A new web page">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="assets/Arthur.jpg">
+    <title>iwak</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>ahur</h1>
-  <p1>ahur goblok</p1>
+        <div class="card" style="font-size:130px">
+
+          <h1 style="color:#6003ab;text-align:center;font-size:4.0vw;">｡.:arthur:.｡</h1>
+
+
+          <img src="assets/Arthur.jpg">
+          </img>
+
+
+        <div class="center"> <button
+        id="myButton2"
+    onclick="window.location.href='pages/contact.html'"
+    aria-label="Go to contact page">contact me</button></div>
+
+        <div class="center2">
+  <button
+    id="myButton"
+    onclick="window.location.href='pages/social.html'"
+    aria-label="Go to social media page"
+  >
+    Social Media
+  </button>
+</div>
+
+
+
+          </div>
+
+
+
+
+        <script>
+
+          function handleOrientationChange() {
+  if (window.innerWidth > window.innerHeight) {
+    window.location.href = "pages/landscape.html";
+  }
+}
+
+handleOrientationChange();
+
+window.addEventListener("resize", handleOrientationChange);
+window.addEventListener("orientationchange", handleOrientationChange);
+
+    document.getElementById("MyButton").addEventListener("click", function() {
+  this.classList.add("clicked");
+  setTimeout(() => {
+    window.location.href = 'pages/social.html';
+  }, 150);
+});
+
+document.getElementById("MyButton2").addEventListener("click", function() {
+  this.classList.add("clicked2");
+  setTimeout(() => {
+    window.location.href = 'pages/social.html';
+  }, 150);
+});
+
+
+
+        </script>
+
 </body>
 </html>
